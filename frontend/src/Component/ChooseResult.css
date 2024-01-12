@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Saira&display=swap');
+
+.choose-main{
+    display: flex;
+    max-width: 250px;
+    background-color: rgb(71, 80, 70);
+    margin: 15px;
+    font-family: Saira, sans-serif;
+}
+.choose-main img{
+    width: 120px;
+    height: 120px;
+    padding: 8px;
+}
+.choose-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 80px;
+}
+
+@media (max-width:600px){
+    .choose-main{
+        flex-direction: column;
+    }
+    .choose-main img{
+        padding: 8px 8px 2px 8px;
+    }
+    .choose-name{
+        font-size: 15px;
+        padding: 0px 4px 8px 4px;
+        font-weight:100;
+    }
+}
+
+
+@media (max-width:380px){
+    .choose-main{
+        margin: 7px;
+    }
+}

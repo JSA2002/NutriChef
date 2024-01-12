@@ -1,0 +1,89 @@
+.name-main{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("../Imgs/bg-final.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+.name-content{
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name-content h2{
+    font-size: 40px;
+    margin-top: 8vh;
+    color: rgb(178, 205, 58);
+}
+.name-content p{
+    font-size: 25px;
+    margin-top: 7vh;
+    color: #269635;
+    font-family: cursive;
+    margin-bottom: 8vh;
+}
+.name-input{
+    width: 400px;
+    padding: 8px;
+    font-size: large;
+    background-color: transparent;
+    border: 2px solid #269635;
+    border-radius: 5px;
+    color: #269635;
+}
+.choose-name-main{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    min-height: 20vh;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    justify-content: space-evenly;
+}
+.spinner-name{
+    width: 100vw;
+    text-align: center;
+    margin-top: 35px;
+}
+@media (max-width:500px){
+    .choose-name-main{
+        width: 88vw;
+    }
+    .name-input{
+        width: 80vw;
+    }
+    .name-content h2{
+        font-size: 28px;
+        padding: 0px 10px;
+    }
+    .name-content p{
+        font-size: 18px;
+        margin: 4.5vh 0px;
+    }
+
+}
+
+.sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(197, 246, 0, 0.7);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 1;
+    animation: sparkle 0.5s ease-out;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}

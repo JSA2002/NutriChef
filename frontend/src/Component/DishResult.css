@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Saira&display=swap');
+
+.dishresult-main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Saira', sans-serif;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.dishresult{
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.dishresult img{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+}
+.dishresult-content{
+    font-family: 'Saira', sans-serif;
+    width: 250px;
+    padding-left: 20px;
+    max-width: 90vw;
+}
+.dishresult-content h2{
+   font-size: 35px;
+}
+.dishresult-content p{
+  font-size: 16px;
+}
+.about-main{
+    max-width: 800px;
+    padding-bottom: 10px;
+}
+.recipe{
+    max-width: 950px;
+    margin: 15px 0px;
+}
+.nutrition-inside{
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.onut{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.onut2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.onut2{
+    margin: 10px;
+}
+.otherNutrition{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+    justify-content: center;
+}
+.meter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+}
+.meter p{
+    margin: 10px;
+}
+.nutrient-main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+    justify-content: space-around;
+}
+.nutrient{
+    width: 200px;
+    margin-top: 10px;
+}
+.otherInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pMain{
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.otherInfo p:last-child{
+    margin-bottom: 25px;
+}
+.spinner{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:600px){
+    .dishresult{
+        flex-direction: column;
+        align-items: start;
+        width: 100vw;
+        padding: 0px;
+        margin-left: 3.5vw;
+    }
+    .dishresult img{
+        width: 88vw;
+        height: 88vw;
+    }
+    .about-main{
+        max-width: 88vw;
+        padding-bottom: 6px;
+    }
+    .recipe, .dailyGoal, .onut2 , .nutrition{
+        max-width: 88vw;
+    }
+    .otherInfo{
+        width: 88vw;
+        align-items: start;
+    }
+    .dishresult-content{
+        padding-left: 8px;
+    }
+    .onut{
+        align-items: center;
+    }
+    .onut2{
+        align-items: start;
+    }
+}

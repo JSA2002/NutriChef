@@ -1,0 +1,11 @@
+.navbar-main{
+    width: 100vw;
+    background-color: transparent;
+    height: 50px;
+}
+.navbar-main img{
+    width: 140px;
+    margin-left: 15px;
+    filter: brightness(160%);
+    margin-top: 9px;
+}
