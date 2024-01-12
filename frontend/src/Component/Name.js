@@ -11,7 +11,7 @@ const Name = () => {
 
   useEffect(() => {
     if (searchTerm) {
-      fetch(`http://localhost:5000/name?searchTerm=${searchTerm}`, {
+      fetch(`https://nutrichef-backend.vercel.app/name?searchTerm=${searchTerm}`, {
         method: 'GET',
       })
         .then((response) => response.json())
