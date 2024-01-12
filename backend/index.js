@@ -3,8 +3,8 @@ const express  = require("express");
 const {connect} = require("./connect");
 const cors = require('cors');
 const app = express();
-const multer = require('multer');
-const upload = multer({ dest: 'uploads/' });
+//const multer = require('multer');
+//const upload = multer({ dest: 'uploads/' });
 
 app.use(cors());
 app.use(express.json());
@@ -33,14 +33,14 @@ app.get("/name/:dishname",async (req, res)=>{
   } 
 })
 
-app.post('/upload', upload.single('file'), (req, res) => {
+/*app.post('/upload', upload.single('file'), (req, res) => {
   if (!req.file) {
     return res.status(400).send('No file uploaded.');
   }
   const uploadedFile = req.file;
   console.log('Uploaded file:', uploadedFile);
   res.status(200).json({ message: 'File uploaded successfully' });
-});
+});*/
 
 
 app.post('/camera', (req, res) => {
