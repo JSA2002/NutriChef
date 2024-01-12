@@ -8,6 +8,11 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!'); // Or any response you desire
+});
+
 app.get("/name",async (req, res)=>{
     const result = await connect();
       const results = await result.aggregate([
