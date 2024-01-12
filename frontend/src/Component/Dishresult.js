@@ -14,7 +14,7 @@ const Dishresult = () => {
     const fetchData = async () => {
       if (dishname) {
         try {
-          const response = await fetch(`http://localhost:5000/name/${dishname}`, {
+          const response = await fetch(`https://nutrichef-backend.vercel.app/name/${dishname}`, {
             method: 'GET',
           });
   
