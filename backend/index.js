@@ -76,7 +76,8 @@ app.post('/ingredient', async (req, res) => {
     res.send(results)
 });
 
-app.post('/signin', async (req, res) => {
+app.options('/signin', cors());
+app.post('/signin', cors(), async (req, res) => {
   const result = await AuthConnect();
   const { email, password } = req.body;
   try{
@@ -98,7 +99,8 @@ app.post('/signin', async (req, res) => {
 
 });
 
-app.post('/signup', async (req, res) => {
+app.options('/signup', cors());
+app.post('/signup', cors(), async (req, res) => {
   const result = await AuthConnect();
   const { signUpPassword, signUpEmail, signUpName } = req.body;
   const user = {
