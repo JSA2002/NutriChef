@@ -3,6 +3,7 @@ const express  = require("express");
 const {connect} = require("./connect");
 const cors = require('cors');
 const app = express();
+const {AuthConnect} = require("./AuthConnect");
 //const multer = require('multer');
 //const upload = multer({ dest: 'uploads/' });
 
