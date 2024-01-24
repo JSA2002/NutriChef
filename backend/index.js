@@ -3,7 +3,6 @@ const express  = require("express");
 const {connect} = require("./connect");
 const cors = require('cors');
 const app = express();
-const {AuthConnect} = require("./AuthConnect")
 //const multer = require('multer');
 //const upload = multer({ dest: 'uploads/' });
 
@@ -13,7 +12,6 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello, world!'); // Or any response you desire
 });
-
 
 app.get("/name",async (req, res)=>{
     const result = await connect();
