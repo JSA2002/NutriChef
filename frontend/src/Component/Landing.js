@@ -40,7 +40,6 @@ const Landing = () => {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                mode: 'no-cors',
                 body: JSON.stringify({ email, password })
             })
                 .then(async (response) => await response.json())
@@ -82,7 +81,6 @@ const Landing = () => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                mode: 'no-cors',
                 body: JSON.stringify(requestBody)
             })
                 .then(async (response) => await response.json())
