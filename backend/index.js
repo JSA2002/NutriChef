@@ -5,8 +5,14 @@ const cors = require('cors');
 const app = express();
 //const multer = require('multer');
 //const upload = multer({ dest: 'uploads/' });
+const corsOptions = {
+  origin: 'https://nutrichef.vercel.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.get('/', (req, res) => {
