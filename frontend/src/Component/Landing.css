@@ -131,6 +131,43 @@
   color: rgb(205, 205, 205);
   border: 2px solid rgb(205, 205, 205);
 }
+
+.notice{
+  position: absolute;
+  width: 100vw;
+  height: 40px;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice_value{
+  background-color: #269635;
+  padding: 10px 40px;
+  color: #b1dcbb;
+  border-left: 15px solid #11551a;
+  border-right: 15px solid #11551a;
+  font-family:  sans-serif;
+}
+
+.singleword{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  background-color: #34e44b;
+  margin-right: 15px;
+}
+
+.singleword span{
+  color: #11551a;
+  font-size: 20px;
+}
+
 @media (max-width:900px) {
   .landing-content-img{
     flex-direction: column;

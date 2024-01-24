@@ -205,7 +205,7 @@ const Ingredient = () => {
 
   useEffect(() => {
     const CallResult = async () => {   
-      await fetch("http://localhost:5000/ingredient", {
+      await fetch("https://nutrichef-backend.vercel.app/ingredient", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -16,7 +16,7 @@ const Upload = () => {
     const formData = new FormData();
     formData.append('file', selectedFile);
 
-    fetch('http://localhost:5000/upload', {
+    fetch('https://nutrichef-backend.vercel.app/upload', {
       method: 'POST',
       body: formData,
     })
