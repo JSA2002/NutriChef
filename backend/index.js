@@ -5,14 +5,8 @@ const cors = require('cors');
 const app = express();
 //const multer = require('multer');
 //const upload = multer({ dest: 'uploads/' });
-const corsOptions = {
-  origin: 'https://nutrichef.vercel.app',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204,
-};
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -76,8 +70,7 @@ app.post('/ingredient', async (req, res) => {
     res.send(results)
 });
 
-app.options('/signin', cors());
-app.post('/signin', cors(), async (req, res) => {
+app.post('/signin', async (req, res) => {
   const result = await AuthConnect();
   const { email, password } = req.body;
   try{
@@ -99,8 +92,7 @@ app.post('/signin', cors(), async (req, res) => {
 
 });
 
-app.options('/signup', cors());
-app.post('/signup', cors(), async (req, res) => {
+app.post('/signup', async (req, res) => {
   const result = await AuthConnect();
   const { signUpPassword, signUpEmail, signUpName } = req.body;
   const user = {
