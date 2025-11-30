@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.send('Hey their!');
 });
 
+app.get('/health', (req, res) => {
+  res.send('I am alright, all is well!');
+});
+
 app.get("/name",async (req, res)=>{
     const result = await connect();
       const results = await result.aggregate([
