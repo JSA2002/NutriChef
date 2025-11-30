@@ -24,10 +24,8 @@ app.get('/list', async (req, res) => {
 
     const result = await collection.aggregate([
       { $project: { _id: 0, "Dish.DishName": 1 } }
-    ]).toArray();
-
+    ]);
     const dishNames = result.map(item => item.Dish.DishName);
-
     res.json(dishNames);
 
   } catch (err) {
