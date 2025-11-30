@@ -18,6 +18,19 @@ app.get('/health', (req, res) => {
   res.send('I am alright, all is well!');
 });
 
+app.get('/list', async (req, res) => {
+  try {
+    const result = await connect();
+    const list = await result.find({}, { projection: { "Dish.DishName": 1, _id: 0 } }).toArray();
+    const dishNames = list.map(item => item.Dish.DishName);
+    res.json(dishNames);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Server Error");
+  }
+});
+
+
 app.get("/name",async (req, res)=>{
     const result = await connect();
       const results = await result.aggregate([
