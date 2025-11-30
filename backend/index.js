@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Hello, world!'); // Or any response you desire
+  res.send('Hey their!');
 });
 
 app.get("/name",async (req, res)=>{
